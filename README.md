@@ -1,14 +1,15 @@
 # Type Theme
 
-![Default Type Theme blog](https://user-images.githubusercontent.com/816965/30518919-d5978024-9bcd-11e7-81b3-3dd07e99a1f9.png)
+![Default Blog Theme](assets/img/blog-theme-home.PNG) 
+
 
 A free and open-source [Jekyll](https://jekyllrb.com) theme. Great for blogs and easy to customize.
 
-[Demo](https://rohanchandra.github.io/blog-theme/)
+[Demo](https://beedcode.github.io/blog-theme/)
 
 ## Usage
 
-1. Fork and clone the [Type Theme repo](https://github.com/rohanchandra/blog-theme): `git clone https://github.com/rohanchandra/blog-theme`
+1. Fork and clone the [Blog Theme repo](https://github.com/beedcode/blog-theme): `git clone https://github.com/beedcode/blog-theme`
 2. [Install Jekyll](https://jekyllrb.com/docs/installation/): `gem install jekyll`
 3. Install the theme's dependencies: `bundle install`
 4. Customize the theme (see below)
@@ -22,11 +23,10 @@ If a variable in this document is marked as "optional", disable the feature by r
 
 ```yml
 theme:
-  title: Type Theme
+  title: Blog Theme
   avatar:
   gravatar:
 ```
-
 Notice the avatar variable is left intentionally blank.
 
 Below is a summary of the configuration options in Type Theme.
@@ -61,7 +61,7 @@ Change these variables in `_config.yml`:
 | Variable    | Example                          | Description                                                                                                                    | Optional |
 | ----------- | -------------------------------- | ------------------------------------------------------------------------------------------------------------------------------ | -------- |
 | title       | My Jekyll Blog                   | Name of website                                                                                                                | Yes      |
-| avatar      | assets/img/avatar.png            | Path of avatar image, to be displayed in the theme's header                                                                    | Yes      |
+| avatar      | assets/img/avatar-smiley.png     | Path of avatar image, to be displayed in the theme's header                                                                    | Yes      |
 | gravatar    | f9879d71855b5ff21e4963273a886bfc | [MD5 hash of your email address](https://secure.gravatar.com/site/implement/hash/) to load your Gravatar in the theme's header | Yes      |
 | description | My blog posts                    | Short description, primarily used by search engines                                                                            | Yes      |
 
@@ -73,7 +73,7 @@ Change these variables in `_config.yml`:
 | Variable                  | Example                             | Description                                                             | Optional |
 | ------------------------- | ----------------------------------- | ----------------------------------------------------------------------- | -------- |
 | header_text               | Welcome to my Jekyll blog           | HTML (shown below the navigation) with a background colour for emphasis | Yes      |
-| header_text_feature_image | assets/img/sample_feature_img_3.png | Background image for the header text                                    | Yes      |
+| header_text_feature_image | assets/img/blackboard.png           | Background image for the header text                                    | Yes      |
 | footer_text               | Copyright 2014                      | HTML (shown at end of the site) with lighter text                       | Yes      |
 
 ### Icons
@@ -109,7 +109,7 @@ English text used in the theme (such as the "continue reading" label) has been g
 
 ### Colours, typography, padding
 
-![A selection of colours set in Type Theme by modifying the CSS](https://cloud.githubusercontent.com/assets/816965/5142488/130869a6-71d7-11e4-8a38-a69ec1673436.png)
+![A selection of colours set in Blog Theme by modifying the CSS](assets/img/Blog-Posts-CSS.png)
 
 
 | Variable     | Example                    | Description                          | Optional                                                     |
@@ -194,7 +194,7 @@ Type Theme makes use for [KaTeX](https://khan.github.io/KaTeX/) for typesetting.
 
 ### Feature images
 
-![Posts with geometric feature images](https://cloud.githubusercontent.com/assets/816965/5142406/19726478-71d6-11e4-8111-94f788b0e44d.png)
+![Posts with feature images](assets/img/feature-img.PNG)
 
 Add a feature image by specifying a path to an image in the [front matter](http://jekyllrb.com/docs/frontmatter/) in the form of `feature-img: "img/PATH_TO_IMAGE.png"`.
 
@@ -203,8 +203,8 @@ For example:
 ```yml
 ---
 layout: post
-title: Hello World
-feature-img: "assets/img/sample_feature_img.png"
+title: Title
+feature-img: "assets/img/blackboard.jpg"
 ---
 ```
 
@@ -213,9 +213,9 @@ By default, the page title is displayed on top of the feature image, as well as 
 ```yml
 ---
 layout: post
-title: Short title
-feature-title: A much longer title
-feature-img: "assets/img/sample_feature_img.png"
+title: Title
+feature-title: Markdown and HTML
+feature-img: "assets/img/blackboard.jpg"
 ---
 ```
 
@@ -295,4 +295,4 @@ subtitle: "This is a subtitle"
 ```
 
 ## License
-[The MIT License (MIT)](https://github.com/rohanchandra/blog-theme/blob/master/LICENSE)
+[The MIT License (MIT)](https://github.com/beedcode/blog-theme/blob/master/LICENSE)
