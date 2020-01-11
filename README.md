@@ -1,4 +1,4 @@
-# Type Theme
+# Blog Theme
 
 ![Default Blog Theme](assets/img/blog-theme-home.PNG) 
 
