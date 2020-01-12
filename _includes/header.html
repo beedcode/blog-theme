@@ -20,16 +20,6 @@
 				<form action="{{ site.baseurl }}/search.html" method="get">
 			{% endif %}
 
-			<!-- Search bar -->
-			{% if site.theme_settings.search %}
-				<li>
-					<input type="text" id="search-box" name="query" placeholder="Search">
-					<button type="submit">
-						<i class="fa fa-fw fa-search"></i>
-					</button>
-				</li>
-			{% endif %}
-
 			{% if site.theme_settings.site_navigation_sort %}
 				{% assign site_pages = site.pages | sort: site.theme_settings.site_navigation_sort %}
 			{% else %}
@@ -47,6 +37,16 @@
 					</li>
 				{% endif %}
 			{% endfor %}
+
+			<!-- Search bar -->
+			{% if site.theme_settings.search %}
+				<li>
+					<input type="text" id="search-box" name="query" placeholder="Search">
+					<button type="submit">
+						<i class="fa fa-fw fa-search"></i>
+					</button>
+				</li>
+			{% endif %}
 
 			{% if site.theme_settings.search %}
 				</form>

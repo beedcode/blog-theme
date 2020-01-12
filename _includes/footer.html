@@ -1,9 +1,16 @@
 {% if site.theme_settings.katex and page.id %}
-<script src="{{ "/assets/js/katex_init.js" | relative_url }}"></script>
+    <script src="{{ "/assets/js/katex_init.js" | relative_url }}"></script>
 {% endif %}
 
 {% if site.theme_settings.footer_text %}
-<footer class="site-footer">
-	<p class="text">{{ site.theme_settings.footer_text }}</p>
-</footer>
+    <footer class="site-footer">
+        <ul class="site-footer-nav">
+            <li>
+                <a class="page-link" href="{{site.baseurl}}/about/">About</a>
+            </li>
+            <li>
+                <p class="text">{{ site.theme_settings.footer_text }}</p>
+            </li>
+        </ul>
+    </footer>
 {% endif %}
