@@ -4,35 +4,22 @@
   text-align: center;
   background: $footer-background;
   width: 100%;
-  //color: lighten($text-color, 30%);
   color: $footer-color;
   font-size: 0.9em;
-}
 
-.site-footer-nav {
-  ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    line-height: 1.5;
-    //float: ;
-    text-align: center;
+  div.container {
+    display: table;
+    border-collapse: collapse;
+    width: 100%;
   }
-  li {
-    display: inline;
-    margin-right: 1em;
-    vertical-align: middle;
-    &:last-of-type {
-      margin-right: 0;
-    }
+
+  div.col-row {
+    display: table-row;
+    width: 100%;
   }
-  @media (max-width: 1100px) {
-    ul {
-      display: inline-block;
-      float: left;
-      padding-top: $padding-small;
-      text-align: left;
-      width: 100%;
-    }
+
+  div.col-cell {
+    display: table-cell;
+    padding: 5px;
   }
 }

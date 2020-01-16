@@ -4,13 +4,17 @@
 
 {% if site.theme_settings.footer_text %}
     <footer class="site-footer">
-        <ul class="site-footer-nav">
-            <li>
-                <a class="page-link" href="{{site.baseurl}}/about/">About</a>
-            </li>
-            <li>
-                <p class="text">{{ site.theme_settings.footer_text }}</p>
-            </li>
-        </ul>
+        <div class="container">
+            <div class="col-row">
+                <div class="col-cell">
+                    <a class="page-link" href="{{site.baseurl}}/about/">About</a>
+                </div>
+            </div>
+            <div class="col-row">
+                <div class="col-cell">
+                    <p class="text">{{ site.theme_settings.footer_text }}</p>
+                </div>
+            </div>
+        </div>
     </footer>
 {% endif %}
